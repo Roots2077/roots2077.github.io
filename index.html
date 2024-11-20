@@ -52,7 +52,7 @@
         document.getElementById("loadingparent").style.opacity = "1";
       }, 10);
     </script>
-    <script src="Build/roots2-web.loader.js"></script>
+    <script src="Build/roots2077.github.io.loader.js"></script>
     <script>
       function unitySetLoaderProgressTo(progress){
         document.getElementById('loadingbar').style.right = `${(1-progress) * 100}%`
@@ -65,13 +65,12 @@
       }
 
       createUnityInstance(document.querySelector("#unity-canvas"), {
-        dataUrl: "Build/roots2-web.data.br",
-        frameworkUrl: "Build/roots2-web.framework.js.br",
-        codeUrl: "Build/roots2-web.wasm.br",
+        dataUrl: "Build/roots2077.github.io.data.unityweb",
+        frameworkUrl: "Build/roots2077.github.io.framework.js.unityweb",
+        codeUrl: "Build/roots2077.github.io.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
-        companyName: "RootsTeam",
-        productName: "roots2",
-        productVersion: "0.1.0",
+        companyName: "Roots2077team",
+        productName: "roots2077",
         // matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
         // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
       }, (progress) => unitySetLoaderProgressTo(progress));
